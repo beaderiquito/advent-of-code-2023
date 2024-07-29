@@ -8,7 +8,7 @@ namespace Trebuchet
         {
             // Open the file
             StreamReader sr = new StreamReader("D:\\Interview Practice\\advent-of-code-2023\\day-1\\input.txt");
-            
+
             // Create dictionary for matching spelled out numbers to integers
             NumberDictionary numberDictionary = new NumberDictionary();
 
@@ -40,7 +40,7 @@ namespace Trebuchet
                 int subTotal = (10 * firstMatch) + lastMatch;
                 Console.WriteLine($"=> subTotal={subTotal}");
                 total += subTotal;
-                
+
             }
             sr.Close();
 
@@ -54,16 +54,16 @@ namespace Trebuchet
         Dictionary<string, string> numberDictionary = new Dictionary<string, string>();
         public NumberDictionary()
         {
-            numberDictionary.Add("one", "1");
-            numberDictionary.Add("two", "2");
-            numberDictionary.Add("three", "3");
-            numberDictionary.Add("four", "4");
-            numberDictionary.Add("five", "5");
-            numberDictionary.Add("six", "6");
-            numberDictionary.Add("seven", "7");
-            numberDictionary.Add("eight", "8");
-            numberDictionary.Add("nine", "9");
+            this.numberDictionary.Add("one", "1");
+            this.numberDictionary.Add("two", "2");
+            this.numberDictionary.Add("three", "3");
+            this.numberDictionary.Add("four", "4");
+            this.numberDictionary.Add("five", "5");
+            this.numberDictionary.Add("six", "6");
+            this.numberDictionary.Add("seven", "7");
+            this.numberDictionary.Add("eight", "8");
+            this.numberDictionary.Add("nine", "9");
         }
-        public string Value(string key) => numberDictionary.GetValueOrDefault(key);
+        public string Value(string key) => this.numberDictionary.GetValueOrDefault(key);
     }
 }
