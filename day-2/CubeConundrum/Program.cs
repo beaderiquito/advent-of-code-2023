@@ -14,10 +14,7 @@
             // Open the file
             StreamReader sr = new StreamReader("D:\\Interview Practice\\advent-of-code-2023\\day-2\\input.txt");
 
-            // Initialize values
-
             // Loop through each line in the text file
-            
             string line;
             string[] separators = { "Game ", ": " };
 
@@ -85,7 +82,7 @@
             this.powerTotal = this.maxRed * this.maxGreen * this.maxBlue;
         }
 
-        // For part 1
+        // For Part 1
         public bool isValid(int redCount, int greenCount, int blueCount)
         {
             foreach (GameSet gameSet in this.gameSets)
